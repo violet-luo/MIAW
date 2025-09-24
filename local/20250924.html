@@ -39,13 +39,16 @@
 	// 	     window.location.href = event.data.url;
 	//      }
  //        });
+</script>
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.devMode = true;
+			// embeddedservice_bootstrap.settings.shouldMinimizeWindowOnNewTab = true;
 
 			embeddedservice_bootstrap.init(
-				'00DSG00000YVUMQ',
+				'00DSG00000YVUMQ', // 260 2 sdb6 org ID
 				'MIAW',
 				'https://orgfarm-d2142c1356.test1.my.pc-rnd.site.com/ESWMIAW1758751342016',
 				{
@@ -58,7 +61,6 @@
 	};
 </script>
 <script type='text/javascript' src='https://orgfarm-d2142c1356.test1.my.pc-rnd.site.com/ESWMIAW1758751342016/assets/js/bootstrap.js' onload='initEmbeddedMessaging()'></script>
-
 
 </body>
 </html>
